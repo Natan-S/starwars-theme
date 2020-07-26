@@ -1,0 +1,162 @@
+* {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+    background: rgb(17, 17, 17);
+}
+
+/* Favor não setar width nessa folha de estilo para nenhum .col*/
+.col-12-sm {
+    display: block;
+    background: linear-gradient(to left, #222 50%, #ccc 50%);
+    height: 600px;
+}
+
+#text-body {
+    display: inline-block;
+    position: absolute;
+    top: 100px;
+    width: 96%;
+    height: 15%;
+    z-index: 1;
+    transition: 0.4s linear;
+    opacity: 100%;
+}
+
+#text-body p{
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px 5px black;
+    font-size: 14pt;
+}
+
+#controls {
+    display: inline-block;
+    position: absolute;
+    top: 250px;
+    width: 96%;
+    height: 15%;
+    z-index: 1;
+}
+
+li h1{
+    text-align: justify;
+}
+
+#background-Dark {
+    display: block;
+    position: relative;
+    border: 1px solid rgba(204, 204, 204, 0.116);
+    float: right;
+    margin: 0px;
+    width: 49%;
+    height: 100%;
+    background-color: #222;
+    transition: 0.5s linear;
+    background-image: url(../img/vader.jpg);
+    background-position: 50% 50%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: 0.7s linear;
+    
+}
+
+#background-Light {
+    background-color: #ccc;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 0px;
+    width: 49%;
+    height: 100%;
+    transition: 0.7s linear;
+    left: 0px;
+    opacity: 0;
+    background-image: url(../img/thumb-1920-894700.jpg);
+    background-position: 50% 50%;
+    background-size: 108%;
+    background-repeat: no-repeat;
+}
+
+button#custom-button {
+    display: inline-block;
+    position: relative;
+    cursor:pointer;
+    border-radius: 50%;
+    padding: 42px;
+    top: 2%;
+    right: -72%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    transition: 0.2s linear;
+    z-index: 1;
+    background-image: url(../img/negro.png);
+    background-position: 58% 40%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+button#custom-button2 {
+    background-color: #ccc;
+    display: inline-block;
+    border-style: none;
+    position: relative;
+    cursor:pointer;
+    border-radius: 50%;
+    padding: 42px;
+    top: 2%;
+    left: 8%;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+    transition: 0.2s linear;
+    z-index: 1;
+    background-image: url(../img/luminoso.png);
+    background-position: 58% 40%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+button#custom-button3 {
+    background-color: #ccc;
+    display: inline-block;
+    position: relative;
+    cursor:pointer;
+    border-radius: 50%;
+    padding: 40px;
+    top: 1%;
+    left: 26%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: 0.8s linear;
+    outline: none;
+    z-index: 1;
+    background-image: url(../img/yang.png);
+    background-position: 58% 40%;
+    background-size: 120%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+}
+
+@media screen and (max-width: 500px) {
+    button#custom-button3 {
+        left: 2.8%;
+    }
+
+    button#custom-button2 {
+        left: -11.5%;
+    }
+    
+    button#custom-button {
+        right: -75%;
+    }
+    
+}
+

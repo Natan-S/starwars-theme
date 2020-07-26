@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/simple-grid.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="./js/app.js"></script>
+    <title>Project - Star Wars</title>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="row">
+          <div class="col-12-sm">
+          <div id="text-body">
+            <p style="font-family: 'Libre Baskerville', serif;">ESCOLHA O LADO DA FORÇA!</p>
+            <p style="font-family: 'Libre Baskerville', serif;"> Author: Natan S. © </p>
+          </div>
+          <div id="controls">
+
+            <button id="custom-button" onmouseover="mudaLargura()" onmouseout="originalLargura()"></button>  
+
+            <button id="custom-button2" onmouseover="mudaLargura2()" onmouseout="originalLargura2()"></button> 
+
+            <button id="custom-button3" onmouseover="toggleImage()" onmouseout="disableToggleImage()"></button> 
+
+          </div>
+          <div id="background-Dark"></div>
+          <div id="background-Light"></div>
+          </div>
+        </div>
+      </div>
+
+</body>
+</html>
