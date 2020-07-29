@@ -64,12 +64,8 @@ li h1 {
     height: 100%;
     background-color: #222;
     top: -216px;
-    transition: 0.5s linear;
-    background-image: url(../img/vader.jpg);
-    background-position: 50% 50%;
-    background-size: 100%;
-    background-repeat: no-repeat;
     opacity: 0;
+    background-image: none;
     transition: 0.7s linear;
     -webkit-transition: 0.7s linear;
     -moz-transition: 0.7s linear;
@@ -88,10 +84,7 @@ li h1 {
     top: -216px;
     left: 0px;
     opacity: 0;
-    background-image: url(../img/thumb-1920-894700.jpg);
-    background-position: 50% 50%;
-    background-size: 108%;
-    background-repeat: no-repeat;
+    background-image: none;
     transition: 0.7s linear;
     -webkit-transition: 0.7s linear;
     -moz-transition: 0.7s linear;
@@ -171,6 +164,18 @@ button#custom-button3 {
         right: -0%;
         position: absolute;
         margin-right: 175px;
+    }
+    #background-Light {
+        background-image: url(../img/thumb-1920-894700.jpg);
+        background-position: 50% 50%;
+        background-size: 108%;
+        background-repeat: no-repeat;
+    }
+    #background-Dark {
+        background-image: url(../img/vader.jpg);
+        background-position: 50% 50%;
+        background-size: 100%;
+        background-repeat: no-repeat;
     }
 }
 
