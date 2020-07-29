@@ -1,48 +1,56 @@
 * {
     -webkit-box-sizing: border-box;
-       -moz-box-sizing: border-box;
-            box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
     background: rgb(17, 17, 17);
 }
 
+
 /* Favor não setar width nessa folha de estilo para nenhum .col*/
+
 .col-12-sm {
     display: block;
     background: linear-gradient(to left, #222 50%, #ccc 50%);
-    height: 600px;
+    height: 580px;
 }
 
 #text-body {
-    display: inline-block;
-    position: absolute;
-    top: 100px;
-    width: 96%;
-    height: 15%;
+    display: block;
+    text-align: center;
+    margin-top: 100px;
+    width: 100%;
+    height: 20%;
     z-index: 1;
     transition: 0.4s linear;
     opacity: 100%;
+    -webkit-transition: 0.4s linear;
+    -moz-transition: 0.4s linear;
+    -ms-transition: 0.4s linear;
+    -o-transition: 0.4s linear;
 }
 
-#text-body p{
-    text-align: center;
+#text-body p {
     color: white;
     text-shadow: 1px 1px 5px black;
     font-size: 14pt;
 }
 
 #controls {
-    display: inline-block;
-    position: relative;
+    display: block;
+    position: absolute;
     top: 250px;
     width: 96%;
     height: 15%;
     z-index: 1;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
 }
 
-li h1{
+li h1 {
     text-align: justify;
 }
 
@@ -55,7 +63,7 @@ li h1{
     width: 49%;
     height: 100%;
     background-color: #222;
-    top: -90px;
+    top: -216px;
     transition: 0.5s linear;
     background-image: url(../img/vader.jpg);
     background-position: 50% 50%;
@@ -63,7 +71,10 @@ li h1{
     background-repeat: no-repeat;
     opacity: 0;
     transition: 0.7s linear;
-    
+    -webkit-transition: 0.7s linear;
+    -moz-transition: 0.7s linear;
+    -ms-transition: 0.7s linear;
+    -o-transition: 0.7s linear;
 }
 
 #background-Light {
@@ -74,20 +85,23 @@ li h1{
     margin: 0px;
     width: 49%;
     height: 100%;
-    top: -90px;
-    transition: 0.7s linear;
+    top: -216px;
     left: 0px;
     opacity: 0;
     background-image: url(../img/thumb-1920-894700.jpg);
     background-position: 50% 50%;
     background-size: 108%;
     background-repeat: no-repeat;
+    transition: 0.7s linear;
+    -webkit-transition: 0.7s linear;
+    -moz-transition: 0.7s linear;
+    -ms-transition: 0.7s linear;
+    -o-transition: 0.7s linear;
 }
 
 button#custom-button {
     display: inline-block;
-    position: relative;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 50%;
     padding: 42px;
     top: 2%;
@@ -102,18 +116,18 @@ button#custom-button {
     background-size: 120%;
     background-repeat: no-repeat;
     opacity: 80%;
+    float: right;
+    margin-right: 50px;
 }
 
 button#custom-button2 {
     background-color: #ccc;
     display: inline-block;
     border-style: none;
-    position: relative;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 50%;
     padding: 42px;
     top: 2%;
-    left: 8%;
     margin-left: auto;
     margin-right: auto;
     outline: none;
@@ -124,20 +138,17 @@ button#custom-button2 {
     background-size: 120%;
     background-repeat: no-repeat;
     opacity: 80%;
+    float: left;
+    margin-left: 50px;
 }
 
 button#custom-button3 {
     background-color: #ccc;
-    display: inline-block;
-    position: relative;
-    cursor:pointer;
+    cursor: pointer;
     border-radius: 50%;
     padding: 40px;
     top: 1%;
-    left: 26%;
-    margin-left: auto;
-    margin-right: auto;
-    transition: 0.8s linear;
+    transition: 0.2s linear;
     outline: none;
     z-index: 1;
     background-image: url(../img/yang.png);
@@ -145,20 +156,29 @@ button#custom-button3 {
     background-size: 120%;
     background-repeat: no-repeat;
     opacity: 80%;
+    margin: 0 auto;
+    margin-left: 0px;
+}
+
+@media screen and (min-width: 1080px) {
+    button#custom-button2 {
+        margin-left: 180px;
+    }
+    button#custom-button3 {
+        margin-left: -260px;
+    }
+    button#custom-button {
+        right: -0%;
+        position: absolute;
+        margin-right: 175px;
+    }
 }
 
 @media screen and (max-width: 500px) {
-    button#custom-button3 {
-        left: 2.8%;
+    #background-Light {
+        background-image: none;
     }
-
-    button#custom-button2 {
-        left: -11.5%;
+    #background-Dark {
+        background-image: none;
     }
-    
-    button#custom-button {
-        right: -75%;
-    }
-    
 }
-
