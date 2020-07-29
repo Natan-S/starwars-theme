@@ -55,6 +55,7 @@ li h1{
     width: 49%;
     height: 100%;
     background-color: #222;
+    top: -90px;
     transition: 0.5s linear;
     background-image: url(../img/vader.jpg);
     background-position: 50% 50%;
@@ -73,6 +74,7 @@ li h1{
     margin: 0px;
     width: 49%;
     height: 100%;
+    top: -90px;
     transition: 0.7s linear;
     left: 0px;
     opacity: 0;
